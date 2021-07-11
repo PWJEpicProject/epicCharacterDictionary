@@ -43,7 +43,7 @@ html {
 .bookImage > img {
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
-    position: absolute;
+    position:relative;
     width: 344px;
     height: 356px;
     left: 1404px;
