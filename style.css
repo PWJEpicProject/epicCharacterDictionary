@@ -8,15 +8,14 @@ html {
 }
 
 .logobox {
-    width: 500px;
-    height: 500px;
     background-color: white;
+    padding: 100px;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
-    box-shadow: rgb(0 0 0 / 20%) 0px 40px 58px -16px, rgb(0 0 0 / 22%) 0px 30px 22px -10px;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
 }
 
 .logo {
@@ -30,6 +29,27 @@ html {
     font-size: 36px;
     line-height: 42px;
     text-align: center;
+}
+
+.loginBtn {
+    margin-top: 30px;
+    background-color: #448FFF;
+    color: white;
+    border: none;
+    height: 40px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    font-size: 35px;
+    width: 364px;
+    height: 81px;
+    left: 551px;
+    top: 560px;
 }
 
 .login {
@@ -49,4 +69,13 @@ html {
     left: 1404px;
     top: 562px;
 
+}
+
+.back {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 42px;
+    text-align: center;
 }
