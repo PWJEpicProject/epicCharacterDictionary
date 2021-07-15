@@ -1,0 +1,84 @@
+nav {
+    background: rgba(173, 170, 170, 0.15);
+    box-shadow: 0 0  0 2px rgb(255,255,255), 0 0  0 3px rgba(0,0,0,0.3);
+}
+
+body {
+    background: white
+}
+
+.web-content {
+    
+    border-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 200px;
+    width: auto;
+
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: #BA68C8
+}
+
+.profile-button {
+    background: #BA68C8;
+    box-shadow: none;
+    border: none
+}
+
+.profile-button:hover {
+    background: #682773
+}
+
+.profile-button:focus {
+    background: #682773;
+    box-shadow: none
+}
+
+.profile-button:active {
+    background: #682773;
+    box-shadow: none
+}
+
+.back:hover {
+    color: #682773;
+    cursor: pointer
+}
+
+.drop-zone {
+    max-width: 200px;
+    height: 200px;
+    padding: initial;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    cursor: pointer;
+    color: #cccccc;
+    border: 4px dashed rgb(224, 224, 179);
+    border-radius: 10px;
+  }
+  
+  .drop-zone--over {
+    border-style: solid;
+  }
+  
+  .drop-zone__input {
+    display: none;
+  }
+  
+  .drop-zone__thumb {
+    width: 100%;
+    height: 5.4em;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #cccccc;
+    background-size: cover;
+    position: relative;
+  }
