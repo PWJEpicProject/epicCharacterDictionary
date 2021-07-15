@@ -50,7 +50,35 @@ html {
     height: 81px;
     left: 551px;
     top: 560px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
 }
+
+.loginBtn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .loginBtn span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .loginBtn:hover span {
+    padding-right: 25px;
+  }
+  
+  .loginBtn:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
 
 .login {
     display: flex;
