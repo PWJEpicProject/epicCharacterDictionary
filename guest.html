@@ -8,9 +8,9 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="guest.css">
-    <title>Hello, world!</title>
+    <title>ECD - Guest</title>
   </head>
-  <body>
+  <body class="page-body">
     <nav class="navbar navbar-light bg-light">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html">
@@ -18,23 +18,292 @@
         </a>
       </div>
   </nav>
-  <!-- LIST OF AUTHORS ON THE NETWORK -->    
-    <div class="web-content">
-        <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              List of Authors
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="#">Christian Rhodes</a>  
-              <a class="dropdown-item" href="#">George Lucas</a>
-              <a class="dropdown-item" href="#">J.K Rowling</a>
-              <a class="dropdown-item" href="#">J.R.R. Tolkien</a>
+  
+  
+  <!-- LIST OF AUTHORS ON THE NETWORK -->
+  <div class="web-content" id="web-content" style="visibility: visible; display: block;">
+    <div class="dropdown">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        List of Authors
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" id="authorSelect0">Christian Rhodes</a>  
+        <a class="dropdown-item" id="authorSelect1">George Lucas</a>
+        <a class="dropdown-item" id="authorSelect2">J.K Rowling</a>
+        <a class="dropdown-item" id="authorSelect3">Shigeru Miyamoto</a>
+        <a class="dropdown-item" id="authorSelect4">Walter E. Disney</a>
+      </div>
+    </div>
+  </div>
+  <!-- CHOSEN AUTHOR 0-->
+    <div class="authorContainer0" id="authorContainer0" style="visibility: hidden; display:none;">
+      <div class="characterList">   
+        <div class="profile-card">
+            <img class="pattern" src="images/characters/casey.png" alt>
+            <hr>
+            <div class="name">
+                Casey Tresor
+                <span class="age">16</span>
+                <br>
+                <span class="sex">Male</span>
             </div>
         </div>
+
+        <div class="profile-card">
+            <img class="pattern" src="images/characters/sofie.png" alt>
+            <hr>
+            <div class="name">
+                Sofie Charming
+                <span class="age">9</span>
+                <br>
+                <span class="sex">Female</span>
+            </div>
+        </div>
+
+        <div class="profile-card">
+            <img class="pattern" src="images/characters/hunt.png" alt>
+            <hr>
+            <div class="name">
+                Hunter Long
+                <span class="age">21</span>
+                <br>
+                <span class="sex">Male</span>
+            </div>
+        </div>
+
+        <div class="profile-card">
+            <img class="pattern" src="images/characters/fancy.png" alt>
+            <hr>
+            <div class="name">
+                Whitney-Fancy Remiel
+                <span class="age">17</span>
+                <br>
+                <span class="sex">Female</span>
+            </div>
+        </div>
+
+        <div class="profile-card">
+          <img class="pattern" src="images/characters/christian.png" alt>
+          <hr>
+          <div class="name">
+              Christian Chevalier
+              <span class="age">23</span>
+              <br>
+              <span class="sex">Male</span>
+          </div>
+        </div>
+
+      </div>
+        <a onClick="backToAuthorList()" a href="#" id="backLink"> Back </a>
+      
     </div>
+  <!-- CHOSEN AUTHOR 1-->
+  <div class="authorContainer1" id="authorContainer1" style="visibility: hidden; display:none;">
+    <div class="characterList">   
+      <div class="profile-card">
+          <img class="pattern" src="images/characters/han.png" alt>
+          <hr>
+          <div class="name">
+              Han Solo
+              <span class="age">32</span>
+              <br>
+              <span class="sex">Male</span>
+          </div>
+      </div>
+
+      <div class="profile-card">
+          <img class="pattern" src="images/characters/leia.png" alt>
+          <hr>
+          <div class="name">
+              Princess Leia
+              <span class="age">40</span>
+              <br>
+              <span class="sex">Female</span>
+          </div>
+      </div>
+
+      <div class="profile-card">
+          <img class="pattern" src="images/characters/finn.png" alt>
+          <hr>
+          <div class="name">
+              Finn
+              <span class="age">23</span>
+              <br>
+              <span class="sex">Male</span>
+          </div>
+      </div>
+
+      <div class="profile-card">
+          <img class="pattern" src="images/characters/r2d2.png" alt>
+          <hr>
+          <div class="name">
+              R2-D2
+              <span class="age">???</span>
+              <br>
+              <span class="sex">Male</span>
+          </div>
+      </div>
+    </div>
+      <a onClick="backToAuthorList()" a href="#" id="backLink"> Back </a>
+    
+  </div>
+
+  <!-- CHOSEN AUTHOR 2-->
+  <div class="authorContainer2" id="authorContainer2" style="visibility: hidden; display:none;">
+    <div class="characterList">   
+      <div class="profile-card">
+          <img class="pattern" src="images/characters/harry.jpg" alt>
+          <hr>
+          <div class="name">
+              Harry Potter
+              <span class="age">13</span>
+              <br>
+              <span class="sex">Male</span>
+          </div>
+      </div>
+
+      <div class="profile-card">
+          <img class="pattern" src="images/characters/herm.jpg" alt>
+          <hr>
+          <div class="name">
+              Hermione Granger
+              <span class="age">13</span>
+              <br>
+              <span class="sex">Female</span>
+          </div>
+      </div>
+
+      <div class="profile-card">
+          <img class="pattern" src="images/characters/dumble.jpg" alt>
+          <hr>
+          <div class="name">
+              Professor Dumbledore
+              <span class="age">150</span>
+              <br>
+              <span class="sex">Male</span>
+          </div>
+      </div>
+
+      <div class="profile-card">
+          <img class="pattern" src="images/characters/snape.jpg" alt>
+          <hr>
+          <div class="name">
+              Severus Snape
+              <span class="age">36</span>
+              <br>
+              <span class="sex">Male</span>
+          </div>
+      </div>
+    </div>
+      <a onClick="backToAuthorList()" a href="#" id="backLink"> Back </a>
+    
+  </div>
+
+  <!-- CHOSEN AUTHOR 3-->
+  <div class="authorContainer3" id="authorContainer3" style="visibility: hidden; display:none;">
+    <div class="characterList">   
+      <div class="profile-card">
+          <img class="pattern" src="images/characters/mario.jpg" alt>
+          <hr>
+          <div class="name">
+              Mario Mario
+              <span class="age">35</span>
+              <br>
+              <span class="sex">Male</span>
+          </div>
+      </div>
+
+      <div class="profile-card">
+          <img class="pattern" src="images/characters/link.PNG" alt>
+          <hr>
+          <div class="name">
+              Link
+              <span class="age">35</span>
+              <br>
+              <span class="sex">Male</span>
+          </div>
+      </div>
+
+      <div class="profile-card">
+          <img class="pattern" src="images/characters/pikachu.PNG" alt>
+          <hr>
+          <div class="name">
+              Pikachu
+              <span class="age">???</span>
+              <br>
+              <span class="sex">Male</span>
+          </div>
+      </div>
+
+      <div class="profile-card">
+          <img class="pattern" src="images/characters/pikmin.jpg" alt>
+          <hr>
+          <div class="name">
+              Pikmin
+              <span class="age">???</span>
+              <br>
+              <span class="sex">Male</span>
+          </div>
+      </div>
+    </div>
+      <a onClick="backToAuthorList()" a href="#" id="backLink"> Back </a>
+    
+  </div>
+
+  <!-- CHOSEN AUTHOR 4-->
+  <div class="authorContainer4" id="authorContainer4" style="visibility: hidden; display:none;">
+    <div class="characterList">   
+      <div class="profile-card">
+          <img class="pattern" src="images/characters/mickey.jpg" alt>
+          <hr>
+          <div class="name">
+              Mickey Mouse
+              <span class="age">92</span>
+              <br>
+              <span class="sex">Male</span>
+          </div>
+      </div>
+
+      <div class="profile-card">
+          <img class="pattern" src="images/characters/donald.jpeg" alt>
+          <hr>
+          <div class="name">
+              Donald Duck
+              <span class="age">86</span>
+              <br>
+              <span class="sex">Male</span>
+          </div>
+      </div>
+
+      <div class="profile-card">
+          <img class="pattern" src="images/characters/goofy.png" alt>
+          <hr>
+          <div class="name">
+              Goofy
+              <span class="age">89</span>
+              <br>
+              <span class="sex">Male</span>
+          </div>
+      </div>
+
+      <div class="profile-card">
+          <img class="pattern" src="images/characters/oswald.jpg" alt>
+          <hr>
+          <div class="name">
+              Oswald
+              <span class="age">80</span>
+              <br>
+              <span class="sex">Male</span>
+          </div>
+      </div>
+    </div>
+      <a onClick="backToAuthorList()" a href="#" id="backLink"> Back </a>
+    
+  </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="script.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
